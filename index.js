@@ -4,28 +4,69 @@ module.exports = (args = process.argv.slice(1)) => {
 	const rasper = { _: [] }
 
 	args
-		.map((arg, index, self) => {
-			const next = self[index + 1]
-			const prev = self[index - 1]
-
-			if (arg[0] === '-' && arg.indexOf('=') === -1 && next[0] === '-') {
-				return arg + '=' + 'true'
-			}
-			if (arg[0] === '-' && arg.indexOf('=') === -1 && next[0] !== '-' && next.indexOf('=') === -1) {
-				return arg + '=' + next
-			}
-			if (arg[0] !== '-' && !arg.indexOf('=') !== -1 && String(prev)[0] !== '-') {
-				return index + '=' + arg
-			}
-
-			return arg // arg[0] === '-' && arg.indexOf('=') !== -1
-		})
-		.filter(arg => arg.split('=')[1] !== undefined)
-		.map(arg => arg.replace(/-/g, ''))
-		.map(arg => {
-			if (!isNaN(arg.split('=')[0])) rasper._.push(arg.split('=')[1])
-			rasper[arg.split('=')[0]] = arg.split('=')[1]
-		})
+		.map(getValue)
+		.map(removeDashs)
+		.filter(removeUndefined)
+		.map(setValue)
 
 	return rasper
+
+	function hasDash (value) {
+		return String(value)[0] === '-'
+	}
+
+	function hasEgual (value) {
+		return String(value).indexOf('=') !== -1
+	}
+
+	function getValue (value, index, self) {
+		const next = self[index + 1]
+		const prev = self[index - 1]
+
+		if (!hasDash(value)) {
+			if (!hasDash(prev) || hasDash(prev) && hasEgual(prev)) {
+				rasper._.push(parser(value))
+			}
+			if (hasDash(prev) && !hasEgual(prev)) {
+				return prev + '=' + value
+			}
+		}
+		if (hasDash(value) && !hasEgual(value) && hasDash(next)) {
+			return value + '=' + 'true'
+		}
+		if (hasDash(value) && !hasEgual(value) && !hasDash(next) && hasEgual(next)) {
+			return value + '=' + next
+		}
+
+		return value
+	}
+
+	function removeDashs (value) {
+		return value.replace(/-/g, '')
+	}
+
+	function removeUndefined (value) {
+		return value.split('=')[1] !== undefined
+	}
+
+	function setValue (value) {
+		const key = parser(value.split('=')[0])
+		const val = parser(value.split('=')[1])
+
+		rasper[key] = val
+	}
+
+	function parser (value) {
+		if (value === 'true') {
+			return true
+		}
+		if (value === 'false') {
+			return false
+		}
+		if (!isNaN(value)) {
+			return parseInt(value)
+		}
+
+		return value
+	}
 }
