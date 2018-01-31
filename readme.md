@@ -3,8 +3,8 @@
 > Light-weight parse argument options.
 
 [![Travis Status](https://travis-ci.org/cjpatoilo/rasper.svg?branch=master)](https://travis-ci.org/cjpatoilo/rasper?branch=master)
-[![AppVeyor Status](https://ci.appveyor.com/api/projects/status/tpjjmha9bs60ndq8?svg=true)](https://ci.appveyor.com/project/cjpatoilo/rasper)
-[![Codacy Status](https://img.shields.io/codacy/grade/99f45f0e32c649e79db8ba48c66b468f/master.svg)](https://www.codacy.com/app/cjpatoilo/rasper/dashboard)
+[![AppVeyor Status](https://ci.appveyor.com/api/projects/status/04dg3w2xexquij8k?svg=true)](https://ci.appveyor.com/project/cjpatoilo/rasper)
+[![Codacy Status](https://img.shields.io/codacy/grade/3fc1af6f76e044a2bb898f2c780fbfec/master.svg)](https://www.codacy.com/app/cjpatoilo/rasper/dashboard)
 [![Dependencies Status](https://david-dm.org/cjpatoilo/rasper.svg)](https://david-dm.org/cjpatoilo/rasper)
 [![Version Status](https://badge.fury.io/js/rasper.svg)](https://www.npmjs.com/package/rasper)
 [![Download Status](https://img.shields.io/npm/dt/rasper.svg)](https://www.npmjs.com/package/rasper)
