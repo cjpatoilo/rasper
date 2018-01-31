@@ -34,8 +34,20 @@ $ yarn add rasper
 ## Usage
 
 ```
+// cli.js
 var arguments = require('rasper')(process.argv.slice(2))
 console.dir(arguments)
+
+// console
+$ pwa-installer dist/**/*.html -f 3 -n -o 4 foo bar baz --manifest --config=pwa.config.js 2 4 -f=99
+{
+	_: [ 'dist/**/*.html', 'foo', 'bar', 'baz', 2, 4 ],
+	n: true,
+	o: 4,
+	manifest: true,
+	config: 'pwa.config.js',
+	f: 99
+}
 ```
 
 ## Contributing
