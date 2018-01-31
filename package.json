@@ -1,6 +1,6 @@
 {
 	"name": "rasper",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Light-weight parse argument options.",
 	"homepage": "https://cjpatoilo.com/rasper",
 	"repository": "cjpatoilo/rasper",
