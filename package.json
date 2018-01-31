@@ -47,7 +47,7 @@
 		"nyc": "^11.4.1"
 	},
 	"engines": {
-		"node": ">=4"
+		"node": ">=6"
 	},
 	"scripts": {
 		"precommit": "npm t",
