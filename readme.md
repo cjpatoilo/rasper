@@ -1,6 +1,6 @@
-<a align="center" href="https://cjpatoilo.com/rasper"><img width="100%" src="https://cjpatoilo.com/rasper/assets/icons/thumbnail.png" alt="Rasper - Light-weight parse argument options."></a>
+<a align="center" href="https://cjpatoilo.com/rasper"><img width="100%" src="https://cjpatoilo.com/rasper/assets/icons/thumbnail.png" alt="Rasper - Node.js parse argument options make ease."></a>
 
-> Light-weight parse argument options.
+> Node.js parse argument options make ease.
 
 [![Travis Status](https://travis-ci.org/cjpatoilo/rasper.svg?branch=master)](https://travis-ci.org/cjpatoilo/rasper?branch=master)
 [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/04dg3w2xexquij8k?svg=true)](https://ci.appveyor.com/project/cjpatoilo/rasper)
@@ -13,7 +13,7 @@
 
 ## Why it's awesome
 
-Lorem ipsum
+Rasper transforms command arguments into an easy-to-use formatted object. Flags will be converted into key-value. If there is define flag without value the result will be assumed to be true. Boolean-looking arguments always will be returned as booleans. Numeric-looking arguments always will be returned as numbers. `_` contains all arguments that didn't have an flag associated.
 
 
 ## Getting Started
@@ -35,8 +35,8 @@ $ yarn add rasper
 
 ```
 // cli.js
-var arguments = require('rasper')(process.argv.slice(2))
-console.dir(arguments)
+const argv = require('rasper')
+console.dir(argv)
 
 // console
 $ pwa-installer dist/**/*.html -f 3 -n -o 4 foo bar baz --manifest --config=pwa.config.js 2 4 -f=99
@@ -49,6 +49,9 @@ $ pwa-installer dist/**/*.html -f 3 -n -o 4 foo bar baz --manifest --config=pwa.
 	f: 99
 }
 ```
+
+Note: If you don't provide an argument `process.argv.slice(1)` is defined by default.
+
 
 ## Contributing
 

@@ -10,8 +10,8 @@
 		"type": "image/png",
 		"sizes": "512x512"
 	}],
-	"theme_color": "#ef5d42",
-	"background_color": "#ef5d42",
+	"theme_color": "#ddd",
+	"background_color": "#ddd",
 	"display": "standalone",
 	"orientation": "portrait",
 	"start_url": "/?utm_source=web_app_manifest&utm_medium=web_app_manifest"
