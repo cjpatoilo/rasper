@@ -19,6 +19,10 @@ module.exports = (args = process.argv.slice(1)) => {
 		return String(value).indexOf('=') !== -1
 	}
 
+	function exist (value) {
+		return value ? true : false
+	}
+
 	function getValue (value, index, self) {
 		const next = self[index + 1]
 		const prev = self[index - 1]
@@ -31,11 +35,13 @@ module.exports = (args = process.argv.slice(1)) => {
 				return prev + '=' + value
 			}
 		}
-		if (hasDash(value) && !hasEgual(value) && hasDash(next)) {
-			return value + '=' + 'true'
-		}
-		if (hasDash(value) && !hasEgual(value) && !hasDash(next) && hasEgual(next)) {
-			return value + '=' + next
+		if (hasDash(value) && !hasEgual(value)) {
+			if (hasDash(next) || !exist(next)) {
+				return value + '=' + 'true'
+			}
+			if (!hasDash(next) && hasEgual(next)) {
+				return value + '=' + next
+			}
 		}
 
 		return value
