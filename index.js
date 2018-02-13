@@ -64,7 +64,7 @@ module.exports = (args = process.argv.slice(1)) => {
 			return false
 		}
 		if (!isNaN(value)) {
-			return parseInt(value)
+			return Number(value)
 		}
 
 		return value
