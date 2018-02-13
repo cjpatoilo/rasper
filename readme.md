@@ -30,6 +30,12 @@ $ npm install rasper
 $ yarn add rasper
 ```
 
+**Run with npx (without installing!)**
+
+```
+$ npx rasper
+```
+
 
 ## Usage
 
@@ -55,9 +61,9 @@ Note: If you don't provide an argument `process.argv.slice(1)` is defined by def
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/rasper/blob/master/.github/contributing.md).
+Want to contribute? Follow these [recommendations](.github/contributing.md).
 
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](license).
