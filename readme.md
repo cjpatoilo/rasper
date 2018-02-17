@@ -30,7 +30,7 @@ $ npm install rasper
 $ yarn add rasper
 ```
 
-**Run with npx (without installing!)**
+**Run with npx (without installing)**
 
 ```
 $ npx rasper
