@@ -1,4 +1,4 @@
-<a align="center" href="https://github.com/cjpatoilo/rasper"><img width="100%" src="https://cjpatoilo.com/rasper/assets/icons/thumbnail.png" alt="Rasper - Node.js parse argument options make ease."></a>
+<a align="center" href="https://github.com/cjpatoilo/rasper"><img width="100%" src="https://cjpatoilo.com/rasper/artwork.png" alt="Rasper - Node.js parse argument options make ease."></a>
 
 > Node.js parse argument options make ease.
 
@@ -30,7 +30,7 @@ $ npm install rasper
 $ yarn add rasper
 ```
 
-**Run with npx (without installing!)**
+**Run with npx (without installing)**
 
 ```
 $ npx rasper

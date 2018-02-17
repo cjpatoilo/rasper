@@ -1,6 +1,6 @@
 {
 	"name": "rasper",
-	"version": "0.2.4",
+	"version": "0.2.5",
 	"description": "Node.js parse argument options make ease.",
 	"homepage": "https://cjpatoilo.com/rasper",
 	"repository": "cjpatoilo/rasper",
@@ -41,7 +41,7 @@
 		"ava": "^0.25.0",
 		"boeing": "latest",
 		"editorconfig-tools": "^0.1.1",
-		"eslint": "^4.16.0",
+		"eslint": "^4.18.0",
 		"eslint-config-styled": "0.0.2",
 		"husky": "^0.14.3",
 		"marshmallow": "latest",
