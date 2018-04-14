@@ -51,8 +51,12 @@ module.exports = (args = process.argv.slice(1)) => {
 		return value.split('=')[1] !== undefined
 	}
 
+	function kebabToCamel (value) {
+		return value.replace(/-([a-z])/g, (_, k) => k.toUpperCase())
+	}
+
 	function setValue (value) {
-		const key = parser(value.split('=')[0])
+		const key = parser(kebabToCamel(value.split('=')[0]))
 		const val = parser(value.split('=')[1])
 
 		rasper[key] = val
