@@ -44,7 +44,7 @@ module.exports = (args = process.argv.slice(1)) => {
 	}
 
 	function removeDashs (value) {
-		return value.replace(/-/g, '')
+		return value.match(/[^-].*/)[0]
 	}
 
 	function removeUndefined (value) {
