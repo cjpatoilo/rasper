@@ -15,7 +15,7 @@ module.exports = (args = process.argv.slice(1)) => {
 		return String(value)[0] === '-'
 	}
 
-	function hasEgual (value) {
+	function hasEqual (value) {
 		return String(value).indexOf('=') !== -1
 	}
 
@@ -24,18 +24,18 @@ module.exports = (args = process.argv.slice(1)) => {
 		const prev = self[index - 1]
 
 		if (!hasDash(value)) {
-			if (!hasDash(prev) || hasDash(prev) && hasEgual(prev)) {
+			if (!hasDash(prev) || hasDash(prev) && hasEqual(prev)) {
 				rasper._.push(parser(value))
 			}
-			if (hasDash(prev) && !hasEgual(prev)) {
+			if (hasDash(prev) && !hasEqual(prev)) {
 				return prev + '=' + value
 			}
 		}
-		if (hasDash(value) && !hasEgual(value)) {
+		if (hasDash(value) && !hasEqual(value)) {
 			if (hasDash(next) || !next) {
 				return value + '=' + 'true'
 			}
-			if (!hasDash(next) && hasEgual(next)) {
+			if (!hasDash(next) && hasEqual(next)) {
 				return value + '=' + next
 			}
 		}
