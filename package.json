@@ -49,7 +49,7 @@
 		"rimraf": "^2.6.2"
 	},
 	"engines": {
-		"node": ">=6"
+		"node": ">=10.0.0"
 	},
 	"scripts": {
 		"prepush": "marshmallow -o docs -i artwork.psd -t Rasper -f -m && boeing docs && rimraf docs",
