@@ -53,6 +53,6 @@
 	"scripts": {
 		"prepush": "marshmallow -o docs -i artwork.psd -t Rasper -f -m && boeing docs && rimraf docs",
 		"precommit": "npm t",
-		"test": "nyc ava && eslint . -c styled --ignore-path .gitignore"
+		"test": "nyc ava && eslint . --ignore-path .gitignore"
 	}
 }
