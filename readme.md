@@ -1,4 +1,4 @@
-<a align="center" href="https://github.com/cjpatoilo/rasper"><img width="100%" src="https://cjpatoilo.com/rasper/artwork.png" alt="Rasper - Node.js parse argument options make ease."></a>
+<a href="https://github.com/cjpatoilo/rasper"><img width="100%" src="https://cjpatoilo.com/rasper/artwork.png" alt="Rasper - Node.js parse argument options make ease."></a>
 
 > Node.js parse argument options make ease.
 
@@ -61,9 +61,9 @@ Note: If you don't provide an argument `process.argv.slice(1)` is defined by def
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](.github/contributing.md).
+Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/rasper#contributing).
 
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](license).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://github.com/cjpatoilo/rasper#license).
