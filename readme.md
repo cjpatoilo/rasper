@@ -44,12 +44,12 @@ console.dir(argv)
 // console
 $ pwa-installer dist/**/*.html -f 3 -n -o 4 foo bar baz --manifest --config=pwa.config.js 2 4 -f=99
 {
-	_: [ 'dist/**/*.html', 'foo', 'bar', 'baz', 2, 4 ],
-	n: true,
-	o: 4,
-	manifest: true,
-	config: 'pwa.config.js',
-	f: 99
+  _: [ 'dist/**/*.html', 'foo', 'bar', 'baz', 2, 4 ],
+  n: true,
+  o: 4,
+  manifest: true,
+  config: 'pwa.config.js',
+  f: 99
 }
 ```
 
