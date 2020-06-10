@@ -10,11 +10,9 @@
 [![Download Status](https://img.shields.io/npm/dt/rasper.svg)](https://www.npmjs.com/package/rasper)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/cjpatoilo/rasper)
 
-
 ## Why it's awesome
 
 Rasper transforms command arguments into an easy-to-use formatted object. Flags will be converted into key-value. If there is define flag without value the result will be assumed to be true. Boolean-looking arguments always will be returned as booleans. Numeric-looking arguments always will be returned as numbers. `_` contains all arguments that didn't have an flag associated.
-
 
 ## Getting Started
 
@@ -35,7 +33,6 @@ $ yarn add rasper
 ```
 $ npx rasper
 ```
-
 
 ## Usage
 
@@ -58,12 +55,10 @@ $ pwa-installer dist/**/*.html -f 3 -n -o 4 foo bar baz --manifest --config=pwa.
 
 Note: If you don't provide an argument `process.argv.slice(1)` is defined by default.
 
-
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/rasper#contributing).
-
+Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/rasper/contribute).
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://github.com/cjpatoilo/rasper#license).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://cjpatoilo.com/license).
